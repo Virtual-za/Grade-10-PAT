@@ -1,0 +1,222 @@
+object frmGame: TfrmGame
+  Left = 0
+  Top = 0
+  Caption = 'Game'
+  ClientHeight = 480
+  ClientWidth = 640
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnActivate = FormActivate
+  OnCreate = FormCreate
+  OnClose = FormClose
+  OnShow = FormShow
+  DesignerMasterStyle = 0
+  object ScaledLayout1: TScaledLayout
+    Align = Client
+    OriginalWidth = 640.000000000000000000
+    OriginalHeight = 480.000000000000000000
+    Size.Width = 640.000000000000000000
+    Size.Height = 480.000000000000000000
+    Size.PlatformDefault = False
+    object rdtInfo: TRadiantRectangle
+      Align = Top
+      Fill.Color = claWhite
+      Size.Width = 640.000000000000000000
+      Size.Height = 129.000000000000000000
+      Size.PlatformDefault = False
+      object btnStartEasy: TButton
+        Position.X = 376.000000000000000000
+        Position.Y = 64.000000000000000000
+        TabOrder = 0
+        Text = ' Start Easy'
+        OnClick = btnStartEasyClick
+      end
+    end
+    object rdtBackground: TRadiantRectangle
+      Align = MostBottom
+      Position.Y = 96.000000000000000000
+      Size.Width = 640.000000000000000000
+      Size.Height = 384.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object RdtArrowBack: TRadiantChevronArrow
+      Position.X = 8.000000000000000000
+      RotationAngle = 270.000000000000000000
+      OnClick = RdtArrowBackClick
+    end
+    object lblScore: TLabel
+      StyledSettings = [Family]
+      Position.X = 440.000000000000000000
+      Position.Y = 8.000000000000000000
+      Size.Width = 89.000000000000000000
+      Size.Height = 25.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Size = 20.000000000000000000
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+      TextSettings.FontColor = claWhite
+      Text = 'Score:'
+      TabOrder = 5
+    end
+    object lblScoreNo: TLabel
+      StyledSettings = [Family]
+      Position.X = 464.000000000000000000
+      Position.Y = 40.000000000000000000
+      Size.Width = 81.000000000000000000
+      Size.Height = 49.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Size = 26.000000000000000000
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+      TextSettings.FontColor = claWhite
+      Text = '0'
+      TabOrder = 6
+    end
+    object lblClickon: TLabel
+      StyledSettings = [Family]
+      Position.X = 280.000000000000000000
+      Size.Width = 113.000000000000000000
+      Size.Height = 25.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Size = 14.000000000000000000
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+      TextSettings.FontColor = claWhite
+      Text = 'Click On:'
+      TabOrder = 7
+    end
+    object imgCharacter: TImage
+      MultiResBitmap = <
+        item
+        end>
+      Position.X = 104.000000000000000000
+      Position.Y = 8.000000000000000000
+      Size.Width = 73.000000000000000000
+      Size.Height = 65.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object rdtFrame: TRadiantFrame
+      Position.X = 104.000000000000000000
+      Position.Y = 8.000000000000000000
+      Size.Width = 73.000000000000000000
+      Size.Height = 73.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object lblUsername: TLabel
+      StyledSettings = [Family]
+      Position.X = 8.000000000000000000
+      Position.Y = 64.000000000000000000
+      Size.Width = 369.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Size = 20.000000000000000000
+      TextSettings.Font.StyleExt = {00060000000000000004000000}
+      Text = 'lblUsername'
+      TabOrder = 9
+    end
+    object lblLives: TLabel
+      StyledSettings = [Family]
+      Position.X = 528.000000000000000000
+      Position.Y = 8.000000000000000000
+      Size.Width = 89.000000000000000000
+      Size.Height = 25.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Size = 20.000000000000000000
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+      TextSettings.FontColor = claWhite
+      Text = 'Lives:'
+      TabOrder = 4
+    end
+    object lblLivesNo: TLabel
+      StyledSettings = [Family]
+      Position.X = 536.000000000000000000
+      Position.Y = 40.000000000000000000
+      Size.Width = 89.000000000000000000
+      Size.Height = 41.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Size = 26.000000000000000000
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+      TextSettings.FontColor = claWhite
+      Text = '3'
+      TabOrder = 3
+    end
+    object lblGameOver: TLabel
+      StyledSettings = []
+      Position.X = 16.000000000000000000
+      Position.Y = 184.000000000000000000
+      Size.Width = 617.000000000000000000
+      Size.Height = 209.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Family = 'Snap ITC'
+      TextSettings.Font.Size = 77.000000000000000000
+      TextSettings.FontColor = claRed
+      Text = 'GAME OVER!'
+      Visible = False
+      TabOrder = 10
+    end
+    object lblStartno: TLabel
+      StyledSettings = [Style]
+      Position.X = 280.000000000000000000
+      Position.Y = 136.000000000000000000
+      Size.Width = 289.000000000000000000
+      Size.Height = 217.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Family = 'Bauhaus 93'
+      TextSettings.Font.Size = 80.000000000000000000
+      TextSettings.FontColor = claRed
+      Text = '3'
+      TabOrder = 11
+    end
+    object btnMainMenu: TButton
+      Position.X = 240.000000000000000000
+      Position.Y = 344.000000000000000000
+      Size.Width = 147.000000000000000000
+      Size.Height = 58.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 12
+      Text = 'Main Menu'
+      OnClick = btnMainMenuClick
+    end
+    object btnStartMedium: TButton
+      Position.X = 464.000000000000000000
+      Position.Y = 64.000000000000000000
+      TabOrder = 13
+      Text = 'StartMedium'
+      OnClick = btnStartMediumClick
+    end
+    object btnStarthard: TButton
+      Position.X = 552.000000000000000000
+      Position.Y = 64.000000000000000000
+      TabOrder = 14
+      Text = 'Starthard'
+      OnClick = btnStarthardClick
+    end
+    object lblWin: TLabel
+      StyledSettings = []
+      Position.X = 8.000000000000000000
+      Position.Y = 144.000000000000000000
+      Size.Width = 641.000000000000000000
+      Size.Height = 257.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Family = 'Showcard Gothic'
+      TextSettings.Font.Size = 72.000000000000000000
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+      TextSettings.FontColor = claBlue
+      Text = 'LEVEL COMPLETE!'
+      TabOrder = 15
+    end
+  end
+  object tmrGame: TTimer
+    Enabled = False
+    Interval = 30
+    OnTimer = tmrGameTimer
+    Left = 616
+  end
+  object tmrStart: TTimer
+    OnTimer = tmrStartTimer
+    Left = 616
+    Top = 56
+  end
+  object mdpGame: TMediaPlayer
+    Left = 480
+    Top = 184
+  end
+end

@@ -1,0 +1,48 @@
+object frmSettings: TfrmSettings
+  Left = 0
+  Top = 0
+  Caption = 'Settings'
+  ClientHeight = 480
+  ClientWidth = 640
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnClose = FormClose
+  DesignerMasterStyle = 0
+  object ScaledLayout1: TScaledLayout
+    Align = Client
+    OriginalWidth = 640.000000000000000000
+    OriginalHeight = 480.000000000000000000
+    Size.Width = 640.000000000000000000
+    Size.Height = 480.000000000000000000
+    Size.PlatformDefault = False
+    object rdtArrowback: TRadiantChevronArrow
+      Position.X = 8.000000000000000000
+      RotationAngle = 270.000000000000000000
+      OnClick = rdtArrowbackClick
+    end
+    object RadiantGear1: TRadiantGear
+      Align = Client
+      Size.Width = 640.000000000000000000
+      Size.Height = 480.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object Label1: TLabel
+      StyledSettings = [Family, Style, FontColor]
+      Position.X = 272.000000000000000000
+      Position.Y = 232.000000000000000000
+      Size.Width = 105.000000000000000000
+      Size.Height = 25.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Size = 18.000000000000000000
+      Text = 'Functioning'
+      TabOrder = 0
+    end
+  end
+  object Timer1: TTimer
+    Interval = 1
+    OnTimer = Timer1Timer
+    Left = 576
+    Top = 384
+  end
+end

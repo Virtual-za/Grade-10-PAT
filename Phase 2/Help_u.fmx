@@ -1,0 +1,25 @@
+object frmHelp: TfrmHelp
+  Left = 0
+  Top = 0
+  Caption = 'Help'
+  ClientHeight = 480
+  ClientWidth = 640
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnClose = FormClose
+  DesignerMasterStyle = 0
+  object ScaledLayout1: TScaledLayout
+    Align = Client
+    OriginalWidth = 640.000000000000000000
+    OriginalHeight = 480.000000000000000000
+    Size.Width = 640.000000000000000000
+    Size.Height = 480.000000000000000000
+    Size.PlatformDefault = False
+    object rdtArrowback: TRadiantChevronArrow
+      Position.X = 8.000000000000000000
+      RotationAngle = 270.000000000000000000
+      OnClick = rdtArrowbackClick
+    end
+  end
+end
